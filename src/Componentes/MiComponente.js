@@ -1,9 +1,19 @@
 import React from "react";
 
-class MiComponente extends React.Component{ //La clase es una extensión del método Component
-    render(){ //Muestra por pantalla
-        return(
-            <h1>Este es un componente</h1> /*Esto es lo que devuelve la clase */
+class MiComponente extends React.Component { //La clase es una extensión del método Component
+    render() { //Muestra por pantalla
+        const vehiculo = {
+            detalles: ['2 ruedas', '4 puertas', '5 peso'],
+            marca: 'Mitsubishi',
+            precio: 15000
+        }
+        return (
+            <div className="mi-componente">
+                <h1>Este es un componente</h1> {/* /*Esto es lo que devuelve la clase */}
+                <h1>{'Marca: ' + vehiculo.marca}</h1> {/* llama al propiedad del objeto */}
+                <h1>{'Detalles: ' + vehiculo.detalles}</h1> {/* llama al propiedad del objeto */}
+                <h1>{'Precio: ' + vehiculo.precio}</h1>
+            </div>
         );
     }
 }

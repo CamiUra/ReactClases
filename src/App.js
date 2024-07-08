@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './Activos/Css/App.css'; //De acá se importa el css
 import MiComponente from './Componentes/MiComponente.js';
 
-function MostrarCurso(nombre_curso, semestre){
+function MostrarCurso(nombre_curso, semestre) {
   let mostrar = (
     <div>
       <h2>Curso: {nombre_curso}</h2>
@@ -37,7 +37,7 @@ function App() { //Función principal que contiene lo que se muestra en pantalla
         </a>
 
         <section className='compone'> {/* Sección donde se llama a la clase de MiComponente */}
-          <MiComponente/>
+          <MiComponente />
         </section>
       </header>
     </div>
