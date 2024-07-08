@@ -1,5 +1,6 @@
 import logo from './logo.svg';
-import './App.css';
+import './Activos/Css/App.css'; //De acá se importa el css
+import MiComponente from './Componentes/MiComponente.js';
 
 function MostrarCurso(nombre_curso, semestre){
   let mostrar = (
@@ -11,7 +12,7 @@ function MostrarCurso(nombre_curso, semestre){
   return mostrar;
 }
 
-function App() {
+function App() { //Función principal que contiene lo que se muestra en pantalla
   let nombre_alumno = 'Camila Díaz'
   let nombre_curso = 'Front End';
   let most_al = <h2>Nombre: {nombre_alumno}</h2>;
@@ -34,6 +35,10 @@ function App() {
         >
           Learn React
         </a>
+
+        <section className='compone'> {/* Sección donde se llama a la clase de MiComponente */}
+          <MiComponente/>
+        </section>
       </header>
     </div>
   );
