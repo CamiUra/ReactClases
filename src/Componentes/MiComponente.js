@@ -10,8 +10,9 @@ class MiComponente extends React.Component { //La clase es una extensión del m�
         return (
             <div className="mi-componente">
                 <h1>Este es un componente</h1> {/* /*Esto es lo que devuelve la clase */}
-                <h1>{'Marca: ' + vehiculo.marca}</h1> {/* llama al propiedad del objeto */}
-                <h1>{'Detalles: ' + vehiculo.detalles}</h1> {/* llama al propiedad del objeto */}
+                <h1>{'Marca: ' + vehiculo.marca}</h1> {/* llama una propiedad del objeto */}
+                <h1>{'Detalles: ' + vehiculo.detalles.join(', ')}</h1> {/* el método "join" concatena un string entre
+                                                                        los elementos del array*/}
                 <h1>{'Precio: ' + vehiculo.precio}</h1>
             </div>
         );
